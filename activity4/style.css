@@ -209,44 +209,24 @@ body {
     letter-spacing: 1.5px;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-button:hover,
+.product-button:focus-visible {
+    background: var(--gold);
+    color: var(--midnight);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(216, 180, 90, 0.25);
 }
 
 .site-footer {
-    padding: 22px 18px 30px;
-    border-top: 1px solid rgba(216, 180, 90, 0.35);
-    color: rgba(247, 240, 223, 0.72);
-    font-size: 12px;
-    letter-spacing: 1.2px;
-    text-align: center;
+   text-align: center;
+   padding: 20px ;
+   background-color: black;
+   margin-top: 40px;
 }
 
-.site-footer p {
-    margin: 0;
-}
-
-    .brand {
-        width: 100%;
-    }
-
-    .navigationbar a:not(.brand) {
-        margin-bottom: 4px;
-    }
-
-    .hero {
-        min-height: 590px;
-        background-position: 62% center;
-    }
-
-    .hero-content {
-        align-self: flex-end;
-        margin: 0;
-        padding: 42px 28px 64px;
-    }
-
-    .hero::after {
-        inset: 12px;
-    }
 
 
 .contact-page {
@@ -371,17 +351,3 @@ body {
     font-size: 42px;
     font-weight: normal;
 }
- 
-
-.site-footer {
-    width: 100%;
-    max-width: 2000px;
-    margin: 100px auto 0;
-    padding: 40px 20px;
-    background: #fdfffe01;
-    color: #59a3e4;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
-
